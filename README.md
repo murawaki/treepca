@@ -1,7 +1,7 @@
 # Principal Component Analysis as a Sanity Check for Bayesian Phylolinguistic Reconstruction
 
 ## About
-Yugo Murawaki. 2024. Principal Component Analysis as a Sanity Check for Bayesian Phylolinguistic Reconstruction. In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024). (to appear).
+Yugo Murawaki. 2024. Principal Component Analysis as a Sanity Check for Bayesian Phylolinguistic Reconstruction. In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024). (to appear) ([arXiv](https://arxiv.org/abs/2402.18877)).
 
 This is a refined version of old code available at https://github.com/murawaki/lexwave
 
@@ -27,7 +27,7 @@ should be rewritten as:
   <log id="TreeWithTraitLogger.t:synthdata2" spec="beastclassic.evolution.likelihood.AncestralSequenceLogger" tree="@Tree.t:synthdata2" tag="ancestral-syndata2" data="@synthdata2" siteModel="@SiteModel.s:synthdata2"/
   ```
 - Run BEAST and obtain a `trees` file (e.g., `synthdata-synthdata2.trees`)
-- Run FigTree to convert the `trees` file into a NEX file
+- Run FigTree to convert the `trees` file into a NEX file (we can skip this step, but we typically want to manually review the outcome before moving forward...)
   - Open the `trees` file
   - Click `Export Trees`
   - Check `Save all trees`
