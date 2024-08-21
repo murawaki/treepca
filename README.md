@@ -1,9 +1,9 @@
 # Principal Component Analysis as a Sanity Check for Bayesian Phylolinguistic Reconstruction
 
 ## About
-Yugo Murawaki. 2024. Principal Component Analysis as a Sanity Check for Bayesian Phylolinguistic Reconstruction. In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024). (to appear) ([arXiv](https://arxiv.org/abs/2402.18877)).
+Yugo Murawaki. 2024. [Principal Component Analysis as a Sanity Check for Bayesian Phylolinguistic Reconstruction](https://aclanthology.org/2024.lrec-main.1138/). In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024). ([arXiv](https://arxiv.org/abs/2402.18877)).
 
-This is a refined version of old code available at https://github.com/murawaki/lexwave
+This is a refined version of old Python2 code available at https://github.com/murawaki/lexwave
 
 ## Requirements
 - Python 3
