@@ -47,8 +47,8 @@ class TreeParser(object):
     COMMA = 4
     ANNOTATION = 5
     BRANCH = 6
-    taxa_re = re.compile(r"([A-Za-z0-9_\-\.]+)")
-    branch_re = re.compile(r"(\d+(?:\.\d+))")
+    taxa_re = re.compile(r"'([A-Za-z0-9_\-\.]+)'|([A-Za-z0-9_\-\.]+)") # maybe enclosed in single quotes
+    branch_re = re.compile(r"(\d+(?:\.\d+)?(?:[eE][+-]?\d+)?)") # maybe scientific notation like "1.2E-4"
 
     def __init__(self, path):
         self.n = NexusReader.from_file(path)
@@ -106,7 +106,8 @@ class TreeParser(object):
             else:
                 match = self.taxa_re.search(tree_data, idx)
                 assert(match is not None)
-                taxa = tree_data[match.start():match.end()]
+                # taxa = tree_data[match.start():match.end()]
+                taxa = match.group(1) if match.group(1) else match.group(2)
                 obj = {
                     'type': self.NODE,
                     'taxa': taxa,
